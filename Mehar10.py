@@ -1,5 +1,13 @@
-#!/bin/sh
-#@title Start GUI Mehar
+# python scrip
+
+
+import apt, apt.debfile
+import pathlib, stat, shutil, urllib.request, subprocess, getpass, time, tempfile
+import secrets, json, re
+import IPython.utils.io
+import ipywidgets
+import os
+from IPython.display import clear_output
 
 
 class _NoteProgress(apt.progress.base.InstallProgress, apt.progress.base.AcquireProgress, apt.progress.base.OpProgress):
