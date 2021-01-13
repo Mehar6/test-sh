@@ -1,11 +1,11 @@
 #!/bin/sh
 #@title Start GUI Mehar
-import apt, apt.debfile
-import pathlib, stat, shutil, urllib.request, subprocess, getpass, time, tempfile
-import secrets, json, re
-import IPython.utils.io
-import ipywidgets
-import os
+! sudo import apt, apt.debfile
+! sudo import pathlib, stat, shutil, urllib.request, subprocess, getpass, time, tempfile
+! sudo import secrets, json, re
+! sudo import IPython.utils.io
+! sudo import ipywidgets
+! sudo import os
 from IPython.display import clear_output
 
 class _NoteProgress(apt.progress.base.InstallProgress, apt.progress.base.AcquireProgress, apt.progress.base.OpProgress):
